@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+
+.titulo {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.main {
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  min-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+}
+
+.item-left p {
+  flex-grow: 0;
+  width: 80px;
+}
+
+.line {
+  position: relative;
+  flex-grow: 1;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  top: 44%;
+  transform: translate(-50%, -50%);
+}
+
+.item-right {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: stretch;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card__left {
+  position: relative;
+  flex-grow: 0;
+  width: 60px;
+}
+
+.card__left__circle {
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.c-red {
+  background-color: red;
+}
+
+.c-blue {
+  background-color: blue;
+}
+
+.c-green {
+  background-color: green;
+}
+
+.card .card__content {
+  flex: 1;
+  padding: 1rem;
+}
